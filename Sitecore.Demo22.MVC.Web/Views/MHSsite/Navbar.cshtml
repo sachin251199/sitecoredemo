@@ -1,0 +1,35 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+
+@if (Model != null && Model.PageItem != null)
+{
+    <div class="nav-bar">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <a href="#" class="navbar-brand">MENU</a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav mr-auto">
+                        @Html.Sitecore().Field("Home",new { @class = "nav-item nav-link" })
+                        @Html.Sitecore().Field("About_Us", new { @class = "nav-item nav-link" })
+                        @Html.Sitecore().Field("NewsandEvents", new { @class = "nav-item nav-link" })
+                        @Html.Sitecore().Field("Fees_structure", new { @class = "nav-item nav-link" })
+                        @Html.Sitecore().Field("Contact_Us", new { @class = "nav-item nav-link" })
+
+                         
+                       
+                    </div>
+                    <div class="ml-auto">
+                        <a class="btn" href="#">Get A Quote</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+}
+

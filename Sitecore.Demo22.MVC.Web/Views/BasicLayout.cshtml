@@ -1,0 +1,176 @@
+﻿@using Sitecore.Mvc
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>introduction</title>
+    <link rel="stylesheet" href="~/Style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+      $(".sidenav").hide();
+      $("#menu").click(function () {
+        $(".sidenav").toggle(1000);
+      })
+    })
+    $(document).ready(function () {
+      $("#flip").click(function () {
+        $("#panel").slideToggle("slow");
+      });
+    });
+    </script>
+</head>
+
+<body>
+    <div class="hero-image">
+        <img src="~/logos.jpg" id="logo">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7lwBCj4Tek0qZkWpc9QWTaQq9Y0FqACy4UQ&usqp=CAU"
+             width="50px" height="50px" id="menu">
+       
+
+        <div class="Down-text"><span>Learn More About What I Do</span></div>
+    </div>
+
+    <h2 id="skill">Recently I Working on These Technologies:</h2>
+    <div id="grid">
+
+        <div class="gallery">
+            <a target="_blank" href="https://pluralsight.imgix.net/paths/path-icons/csharp-e7b8fcd4ce.png">
+                <img src="~/C sharp.jpg" alt="Cinque Terre">
+                <p><b>C sharp</b></p>
+            </a>
+
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://miro.medium.com/max/750/1*zc1BKfAHkpvrZlHPbUvuYA.png">
+                <img src="~/dotnet.png" alt="Cinque Terre">
+                <p><b>.Net Framework</b></p>
+            </a>
+
+        </div>
+        <div class="gallery">
+            <a target="_blank"
+               href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThvbo88HYc-IUeX-_ife5j41Vkk53Rwd0XVg&usqp=CAU">
+                <img src="~/html.jpg" alt="Cinque Terre">
+                <p><b>HTML</b></p>
+            </a>
+
+        </div>
+
+        <div class="gallery">
+            <a target="_blank"
+               href="https://camo.githubusercontent.com/119b29ca4b9d31cf3969a94eb57fcfbbea0879b493c09c89dc6d4b7fb9e0dc37/68747470733a2f2f63646e2e776f726c64766563746f726c6f676f2e636f6d2f6c6f676f732f6373732d332e737667">
+                <img src="~/css.webp" alt="Forest">
+                <p><b>CSS</b></p>
+            </a>
+
+
+        </div>
+
+        <div class="gallery">
+            <a target="_blank" href="https://technokrats.in/wp-content/uploads/2020/11/Content1-7.png">
+                <img src="~/jquery.jpeg" alt="Northern Lights">
+                <p><b>jquery</b></p>
+            </a>
+
+        </div>
+
+    </div>
+    <div class="sidenav">
+        <div>
+            <a target="_blank" href="Abhi.png">
+
+                <img src="~/Abhi.png"><br>
+            </a>
+        </div>
+        <div id="nav">
+            <a id="nav-menu" href="firstRP.html">About Me</a>
+            <hr>
+            <a id="nav-menu" href="tel:+919928964649" style="text-decoration: none; color: black;">Contact Me</a>
+            <hr>
+            <a id="nav-menu" href="~/bcaimage.jpeg">Qualifications</a>
+            <hr>
+            <a id="nav-menu" href="https://github.com/Abhishekvashishtha07">My Work</a>
+            <hr>
+            <a id="nav-menu" href="~/cricket.jpg">My Hobbies</a>
+        </div>
+
+    </div>
+
+
+    <div id="flip"><b>RIGHTPOINT Payment Criteria For Associate Developer</b></div>
+    <div id="panel">
+        <table style="width: 100%">
+            <tr>
+                <td>Position</td>
+                <td>Package</td>
+                <td>monthly income</td>
+            </tr>
+            <tr>
+                <td>Associate Developer</td>
+                <td>3LPA</td>
+                <td>22900</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        @Html.Sitecore().Placeholder("main")
+        <br />
+        @Html.Sitecore().Placeholder("About")
+    </div>
+    <div class="footer">
+        <h1>AB-Dev.IO</h1>
+        <p>
+            Hello! My Name is Abhishek Sharma,<br> i working as Associate developer at RightPoint jaipur,india.<br>
+            i have good knowledge of HTML , CSS , Jquery <br>AND .Net As well.
+        </p>
+
+
+        <h3>Career Goal!!</h3>
+        <p>
+            Looking forward to earning the position of Software<br> Engineer at a leading organization to
+            showcase<br> my skills in programming to generate
+            high-end solutions<br> to general software issues
+            along with drawing better <br>user experience.
+        </p>
+
+
+        <div id="foot-img">
+            <img src="~/Abhi.png" width="200px" height="200px">
+        </div>
+        <div id="symbol">
+            <a href=""> <i class="fa fa-facebook"></i></a>
+
+            <a href=""> <i class="fa fa-instagram"></i></a>
+
+            <a href=""> <i class="fa fa-linkedin"></i></a>
+
+            <a href=""> <i class="fa fa-twitter"></i></a>
+
+            <a href=""> <i class="fa fa-youtube"></i></a>
+        </div>
+        <div class="horizontal">
+        </div>
+
+
+        <div class="foot-list">
+            <a href="" class="bottom-list">Home</a>
+
+            <a href="" class="bottom-list">Contact</a>
+
+            <a href="" class="bottom-list">Qualifications</a>
+
+            <a href="" class="bottom-list">My Work</a>
+
+            <a href="" class="bottom-list">My Hobbies</a>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

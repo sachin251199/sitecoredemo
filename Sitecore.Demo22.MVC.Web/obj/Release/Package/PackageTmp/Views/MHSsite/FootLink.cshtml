@@ -1,0 +1,29 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+
+@if (Model != null && Model.PageItem != null)
+{
+<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    <!-- Links -->
+    <h6 class="text-uppercase fw-bold mb-4">
+        Useful links
+    </h6>
+    <p>
+        @Html.Sitecore().Field("Home", new { @class = "text-reset" })
+    </p>
+    <p>
+        @Html.Sitecore().Field("About_Us", new { @class = "text-reset" })
+    </p>
+    <p>
+        @Html.Sitecore().Field("NewsandEvents", new { @class = "text-reset" })
+    </p>
+    <p>
+        @Html.Sitecore().Field("Fees_structure", new { @class = "text-reset" })
+    </p>
+    <p>
+        @Html.Sitecore().Field("Contact_Us", new { @class = "text-reset" })
+    </p>
+</div>
+}
+@*placeholder footlink*@

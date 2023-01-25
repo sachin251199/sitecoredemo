@@ -1,0 +1,31 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model System.Collections.Generic.IEnumerable<Sitecore.Demo22.MVC.Web.Models.Cardlist>
+
+@if (Model != null)
+{
+
+
+    foreach (var child in Model)
+    {
+
+        <div class="Container_1">
+            @child.Image
+            <div class="about">
+                <h2>@child.Title</h2>
+                <p style="font-size: 20px">
+                    @child.Summary
+                </p>
+                 @child.Link 
+
+            </div>
+
+
+        </div>
+      
+
+
+    }
+
+}
+

@@ -1,0 +1,39 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+
+@model RenderingModel
+
+@if (Model != null && Model.PageItem != null)
+{
+<div id="grid">
+
+    <div class="gallery">
+        @Html.Sitecore().Field("Image", Model.Item)
+        <p><b>@Html.Sitecore().Field("Title", Model.Item)</b></p>
+        <p>@Html.Sitecore().Field("Summary", Model.Item)</p>
+        
+    </div>
+
+    <div class="gallery">
+        @Html.Sitecore().Field("Image2", Model.Item)
+        <p><b>@Html.Sitecore().Field("Title2", Model.Item)</b></p>
+        <p>@Html.Sitecore().Field("Summary2", Model.Item)</p>
+        
+    </div>
+
+    <div class="gallery">
+        @Html.Sitecore().Field("Image3", Model.Item)
+        <p><b>@Html.Sitecore().Field("Title3", Model.Item)</b></p>
+        <p>@Html.Sitecore().Field("Summary3", Model.Item)</p>
+        
+    </div>
+
+    <div class="gallery">
+        @Html.Sitecore().Field("Image4", Model.Item)
+        <p><b>@Html.Sitecore().Field("Title4", Model.Item)</b></p>
+        <p>@Html.Sitecore().Field("Summary4", Model.Item)</p>
+        
+    </div>
+
+</div>
+}

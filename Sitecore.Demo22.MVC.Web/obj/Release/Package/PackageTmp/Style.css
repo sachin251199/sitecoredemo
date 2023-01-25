@@ -1,0 +1,302 @@
+body,html {
+  background-color: #ddd;
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://mixkit.imgix.net/videos/preview/mixkit-software-developer-working-while-drinks-coffee-1730-0.jpg?q=80&auto=format%2Ccompress");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#logo {
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 100px;
+  width: 100px;
+}
+
+#menu {
+  margin-left: 87%;
+  margin-top: 20px;
+  position: fixed;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 3;
+
+}
+
+#skill {
+  margin-left: 20px;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  padding: 12px 0;
+  z-index: -1;
+  transition: 0.9s;
+  text-decoration: none;
+  border-radius: 10px;
+
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.Down-text {
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: rgb(204, 199, 199);
+  bottom: 0;
+  left: 50%;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-bottom: 20px;
+  background-color: #ddd;
+
+
+}
+
+.gallery {
+  height: 300px;
+  border: 2px solid;
+  margin: 0px 20px 0px 20px;
+  text-align: center;
+  border-radius: 6px;
+  text-decoration: none;
+  background-color: rgb(154, 154, 154);
+}
+
+
+.gallery img {
+  width: 100%;
+  height: 250px;
+  /*box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+.gallery a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #ddd;
+  z-index: 2;
+  padding-right: 20px;
+}
+
+.sidenav img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  margin: 20px 0 0 50px;
+  cursor: pointer;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.sidenav a {
+  margin-left: 50px;
+  cursor: pointer;
+ 
+  color: black;
+  text-decoration: none;
+
+
+}
+
+#nav {
+  margin-top: 30px;
+
+}
+
+#nav-menu {
+  font-size: 20px;
+  margin-bottom: 30px;
+  margin-left: 100px;
+
+
+}
+
+#panel,
+#flip {
+  padding: 10px;
+  text-align: center;
+  background-color: #726f69;
+  border: solid 1px #726f69;
+  cursor: pointer;
+
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.RPoint {
+  width: 100%;
+  background-color:rgb(154, 154, 154);
+  position: relative;
+}
+
+.RPoint img {
+  padding: 10px 10px 10px 50px;
+
+}
+
+.RPoint .about {
+  display: inline;
+  position: absolute;
+  padding-right: 80px;
+  font-size: 30px;
+
+
+}
+
+.footer {
+  text-align: center;
+  background-color: #ddd;
+  ;
+  background-size: 100%;
+  color: rgb(134, 14, 14);
+  margin-top: 0px;
+  padding-bottom: 20px;
+
+
+}
+
+.footer #foot-img {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  border-radius: 50%;
+}
+
+.footer #foot-img img {
+  border-radius: 50%;
+}
+
+.footer h1 {
+  margin-top: 50px;
+}
+
+.footer p {
+  line-height: 1.5;
+}
+
+#symbol {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: aliceblue;
+
+}
+
+#symbol a i {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-left: 2px;
+  padding-left: 10px;
+}
+
+#symbol a i:hover {
+  color: red;
+}
+
+
+.horizontal {
+  width: 60%;
+  height: 1px;
+  background: black;
+  margin: auto;
+  margin-bottom: 40px;
+
+}
+
+.foot-list {
+  padding-left: 20px;
+
+  color: black;
+}
+
+.bottom-list {
+  text-decoration: none;
+  padding-left: 20px;
+  color: black;
+ 
+}
+.bottom-list:hover{
+  color: red;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .gallery {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gallery {
+    width: 100%;
+  }
+}
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
